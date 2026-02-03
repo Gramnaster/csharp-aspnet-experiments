@@ -1,0 +1,102 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+[Bb]in/
+[Oo]bj/
+*.log
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# Uncomment if you have NuGet Package Restore enabled
+#!**/packages/keep
+# Uncomment if necessary however generally it will be regenerated when needed
+#*.nuget.props
+#*.nuget.targets
+
+# Microsoft Azure
+app.publish/
+*.PublishSettings
+# Azure Stream Analytics job
+*.azuresml
+
+# Windows
+[Tt]humbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Office Temp Files
+~$*
+*.tmp
+
+# Recycle Bin used on file shares
+*.~lock.*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# JetBrains Rider
+.idea/
+
+# Rider settings
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# DotNet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Local History for VS Code
+.history/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+
+# IDE Preferences
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

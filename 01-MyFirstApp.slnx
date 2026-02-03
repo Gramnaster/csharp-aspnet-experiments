@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="01-MyFirstApp/01-MyFirstApp.csproj" />
+  <Project Path="02-MiddleAssignment/02-MiddleAssignment.csproj" Id="8ebcd50d-f489-4a76-ba6f-5d513f3d2de8" />
+  <Project Path="02-Middleware/02-Middleware.csproj" Id="c50bd273-e753-47ab-ab1d-5eba4c3b554c" />
+  <Project Path="03-Routing/03-Routing.csproj" Id="6a741e22-04b6-4309-b07f-96ae413f2b9f" />
+  <Project Path="03-RoutingCountries/03-RoutingCountries.csproj" Id="054f825b-8a61-43f5-a39b-a2f702063565" />
+  <Project Path="03-StaticFilesExample/03-StaticFilesExample.csproj" Id="1a6725b6-a93c-45bd-97de-d962d80a6f3e" />
+  <Project Path="03-WebAPIExample/03-WebAPIExample.csproj" Id="30cb3e5e-8743-4349-a4e5-ec98bfc8ce5d" />
+  <Project Path="04-BankingProblem/04-BankingProblem.csproj" Id="78276bc2-968d-441b-96c6-89aa9a021c9a" />
+  <Project Path="04-ControllersExample/04-ControllersExample.csproj" Id="ab14c00a-a205-4261-8452-e7b7b9496183" />
+  <Project Path="04-IActionResultExample/04-IActionResultExample.csproj" Id="0c6a737d-eef0-40a6-839e-1b8b6c311a15" />
+  <Project Path="05-ModelBindingExample/05-ModelBindingExample.csproj" Id="aba31b38-04f9-44d3-a6e4-b1f8805d71d5" />
+  <Project Path="UseWhen/02-UseWhen.csproj" Id="4431430b-e2d8-4a49-9cdf-8e2282507685" />
+</Solution>

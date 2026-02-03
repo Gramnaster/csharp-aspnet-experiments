@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>_02_Middleware</RootNamespace>
+    <UserSecretsId>64148ef9-3931-45d2-a472-5e39398eed3e</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
