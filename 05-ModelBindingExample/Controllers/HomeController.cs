@@ -1,4 +1,5 @@
-﻿using _05_ModelBindingExample.Models;
+﻿using _05_ModelBindingExample.CustomModelBinders;
+using _05_ModelBindingExample.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _05_ModelBindingExample.Controllers;
@@ -8,7 +9,7 @@ public class HomeController : Controller
     [Route("register")]
     // Binding the properties of the model like this if you have fewer properties to bind
     // [Bind(nameof(Person.PersonName), nameof(Person.Email), nameof(Person.Password), nameof(Person.ConfirmPassword))]
-    public IActionResult Index(Person person)
+    public IActionResult Index([ModelBinder(BinderType = typeof(PersonModelBinder))]Person person)
     {
         
         if (!ModelState.IsValid)
