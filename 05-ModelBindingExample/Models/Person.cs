@@ -33,7 +33,7 @@ namespace _05_ModelBindingExample.Models
 
         //[MinimumYearValidator(2005, ErrorMessage = "Date of Birth should be before {0}")]
         [MinimumYearValidator(2005)]
-        [BindNever]
+        //[BindNever]
         public DateTime? DateOfBirth { get; set; }
 
         public DateTime? FromDate { get; set; }
@@ -44,6 +44,8 @@ namespace _05_ModelBindingExample.Models
         public double? Price {  get; set; }
 
         public int? Age { get; set; }
+
+        public List<string?> Tags { get; set; } = [];
 
         public override string ToString()
         {

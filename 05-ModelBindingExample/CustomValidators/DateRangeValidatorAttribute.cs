@@ -1,50 +1,49 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace _05_ModelBindingExample.CustomValidators
+namespace _05_ModelBindingExample.CustomValidators;
+
+public class DateRangeValidatorAttribute : ValidationAttribute
 {
-    public class DateRangeValidatorAttribute : ValidationAttribute
+    public string OtherPropertyName { get; set; }
+    public DateRangeValidatorAttribute(string otherPropertName)
     {
-        public string OtherPropertyName { get; set; }
-        public DateRangeValidatorAttribute(string otherPropertName)
+        OtherPropertyName = otherPropertName;
+    }
+    protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
+    {
+        if (value is not null)
         {
-            OtherPropertyName = otherPropertName;
-        }
-        protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
-        {
-            if (value is not null)
+            DateTime toDate = Convert.ToDateTime(value);
+            // Object Instance is based on the object sent through Model Binding
+            // otherProperty represents FromDate
+            // Uses 'Reflection'
+            PropertyInfo? otherProperty = validationContext.ObjectType.GetProperty(OtherPropertyName);
+
+            if (otherProperty != null)
             {
-                DateTime toDate = Convert.ToDateTime(value);
-                // Object Instance is based on the object sent through Model Binding
-                // otherProperty represents FromDate
-                // Uses 'Reflection'
-                PropertyInfo? otherProperty = validationContext.ObjectType.GetProperty(OtherPropertyName);
+                object? otherValue = otherProperty.GetValue(validationContext.ObjectInstance);
 
-                if (otherProperty != null)
+                if (otherValue is not null)
                 {
-                    object? otherValue = otherProperty.GetValue(validationContext.ObjectInstance);
+                    DateTime fromDate = Convert.ToDateTime(otherValue);
 
-                    if (otherValue is not null)
+                    if (fromDate > toDate)
                     {
-                        DateTime fromDate = Convert.ToDateTime(otherValue);
-
-                        if (fromDate > toDate)
-                        {
-                            // Fix CS8601: Ensure validationContext.MemberName is not null
-                            // Fix IDE0300: Use collection initializer
-                            return new ValidationResult(
-                                ErrorMessage ?? "Invalid date range.",
-                                [OtherPropertyName, validationContext.MemberName ?? string.Empty]
-                            );
-                        }
-                        else
-                        {
-                            return ValidationResult.Success;
-                        }
+                        // Fix CS8601: Ensure validationContext.MemberName is not null
+                        // Fix IDE0300: Use collection initializer
+                        return new ValidationResult(
+                            ErrorMessage ?? "Invalid date range.",
+                            [OtherPropertyName, validationContext.MemberName ?? string.Empty]
+                        );
+                    }
+                    else
+                    {
+                        return ValidationResult.Success;
                     }
                 }
             }
-            return null;
         }
+        return null;
     }
 }
