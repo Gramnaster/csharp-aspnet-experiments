@@ -11,5 +11,7 @@
   <Project Path="04-IActionResultExample/04-IActionResultExample.csproj" Id="0c6a737d-eef0-40a6-839e-1b8b6c311a15" />
   <Project Path="05-ECommerceProblem-01/05-ECommerceProblem-01.csproj" Id="0d5fe2e9-cb4f-4617-8651-a426052c1c68" />
   <Project Path="05-ModelBindingExample/05-ModelBindingExample.csproj" Id="aba31b38-04f9-44d3-a6e4-b1f8805d71d5" />
+  <Project Path="12-DIExample-Services/12-DIExample-Services.csproj" Id="2e8f522a-5608-4461-909b-5506f300ae5d" />
+  <Project Path="12-DIExample/12-DIExample.csproj" Id="fd16343b-6bb3-4918-a47d-017305eef3e3" />
   <Project Path="UseWhen/02-UseWhen.csproj" Id="4431430b-e2d8-4a49-9cdf-8e2282507685" />
 </Solution>
