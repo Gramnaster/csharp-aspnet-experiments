@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\12-DIExample-ServiceContracts\12-DIExample-ServiceContracts.csproj" />
     <ProjectReference Include="..\12-DIExample-Services\12-DIExample-Services.csproj" />
   </ItemGroup>
 
