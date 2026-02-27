@@ -100,3 +100,4 @@ yarn-error.log*
 *.user
 *.userosscache
 *.sln.docstates
+/14-ConfigurationExample/appsettings.Development.json

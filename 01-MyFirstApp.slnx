@@ -14,5 +14,7 @@
   <Project Path="12-DIExample-ServiceContracts/12-DIExample-ServiceContracts.csproj" Id="7f40bf0a-2c00-4252-b1f0-3ca5428cf90d" />
   <Project Path="12-DIExample-Services/12-DIExample-Services.csproj" Id="2e8f522a-5608-4461-909b-5506f300ae5d" />
   <Project Path="12-DIExample/12-DIExample.csproj" Id="fd16343b-6bb3-4918-a47d-017305eef3e3" />
+  <Project Path="13-EnvironmentsExample/13-EnvironmentsExample.csproj" Id="42c62e50-1fc9-4a31-8f5f-5aa39a57c5b8" />
+  <Project Path="14-ConfigurationExample/14-ConfigurationExample.csproj" Id="04bd893a-b252-4172-976e-06bdfac49744" />
   <Project Path="UseWhen/02-UseWhen.csproj" Id="4431430b-e2d8-4a49-9cdf-8e2282507685" />
 </Solution>
